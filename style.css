@@ -1,0 +1,277 @@
+/*DISABLE the Horizontal Scroll*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+ 
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+   text-decoration: none;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+   
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} 
+
+/*section id="home"*/
+#home { 
+  background: url('https://s31.postimg.cc/ysgash863/creekwood.jpg') 50% 0 repeat fixed; min-height: 600px; 
+  height: 200px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative;
+  font-size: 55px;
+}
+ 
+#home article { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 200px; 
+  width: 100%; 
+}
+ /*section id="about"*/
+#about { 
+  background: url('https://s31.postimg.cc/goda7n057/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 390px; 
+  height: 200px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  font-size: 19px;
+  color:lightgrey;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+ 
+#about article { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 20px; 
+  width: 100%; 
+}
+
+/*section id="skills"*/
+#Skills { 
+  background: url('https://s31.postimg.cc/otvc5u6ej/portfolio-background.jpg') 50% 0 repeat fixed; min-height: 100px; 
+  height: 600px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+  font-size: 45px;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+ 
+#Skills article { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 150px; 
+  width: 100%; 
+}
+/* Section Skills 1 */
+/*Place Images side by side//
+//This Section Add to CSS float property*/
+ {
+box-sizing: border-box;
+}
+.row {
+	display: flex;
+	}
+
+/* Thumbnail image controls*/
+.row > .column {
+  padding: 0 8px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img. {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+/*End Section Skills-images*/
+/*section id="Project"*/
+#Projects { 
+  background: url('https://s31.postimg.cc/wqcnaceqz/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 600px; 
+  height: 600px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; /*previous absolute, changed to relative*/
+  font-size: 45px;
+  color:grey;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+ 
+#Projects article { 
+  height: 458px; 
+  position: absolute; 
+  text-align: center; 
+  top: 250px; 
+  width: 100%; 
+}
+
+/*section id="Contact"*/
+/*Contact Form*/
+#contact { 
+  background: url('https://s31.postimg.cc/6pp5hffvv/design_wallp.jpg') 50% 0 repeat fixed; min-height: 750px; 
+  height: 750px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: absolute;
+  font-size: 5px;
+  color:grey;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+ 
+}
+ 
+#contact article { 
+  height: 600px; 
+  position: absolute; 
+  text-align: center; 
+  top: 15px; 
+  width: 80%; 
+}/*Title of Contact Form Ends*/
+
+#form
+{
+    min-width:400px;
+    max-width:750px;
+    margin: auto;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 5px #888888;
+    padding:20px;
+    border:4px solid #27748A;
+   margin-left: 15%;/*to center the box of contact form*/
+    margin-right:5%;/*to center the box of contact form*/
+}
+
+#form h2
+{
+    color:#27748A;
+    font-size:20px;
+   text-align: center; 
+    margin:0;
+}
+
+#form p
+{
+    font-size:20px;
+    color:white;
+}
+
+#form div
+{
+    margin-top:15px;
+  margin-left:2px;
+}
+
+#form input, textarea, button
+{
+    width:76%;
+    border:2px solid #9ECEDB;
+    padding:5px 5px;
+}
+
+#form label
+{
+    font-weight:bold;
+    font-size:20px;
+    color:#white;
+}
+#form button
+{
+    background-color: #9ECEDB;
+    color: #184552;
+    cursor:pointer;
+}
+
+#form button:hover
+{
+    background-color: #CBEAF2;
+}
+required
+{
+    color:#dd6666;
+}
+/*End Contact Form*/
+
+
+/*Section Footer*/
+#footer{
+  
+}
+
+/*End Section Footer*/
