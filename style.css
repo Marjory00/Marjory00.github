@@ -52,7 +52,7 @@ html, body {
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
-    position: absolute;
+    position: relative;
     right: 0;
     top: 0;
   }
@@ -66,7 +66,7 @@ html, body {
 /*section id="home"*/
 #home { 
   background: url('https://s31.postimg.cc/ysgash863/creekwood.jpg') 50% 0 repeat fixed; min-height: 600px; 
-  height: 200px; 
+  height: 600px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
@@ -76,8 +76,8 @@ html, body {
 }
  
 #home article { 
-  height: 458px; 
-  position: absolute; 
+  height: 700px; 
+  position: relative; 
   text-align: center; 
   top: 200px; 
   width: 100%; 
@@ -85,44 +85,44 @@ html, body {
  /*section id="about"*/
 #about { 
   background: url('https://s31.postimg.cc/goda7n057/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 390px; 
-  height: 200px; 
+  height: 600px; 
   margin: 0 auto; 
-  width: 100%; 
+  width: 100%;
   max-width: 1920px; 
   position: relative; 
-  font-size: 19px;
+  text align:"center";
+  font-size: 18px;
   color:lightgrey;
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
  
 #about article { 
   height: 458px; 
-  position: absolute; 
+  position: relative; 
   text-align: center; 
   top: 20px; 
   width: 100%; 
+  padding: 0 0 0 8%;
 }
 
 /*section id="skills"*/
 #Skills { 
   background: url('https://s31.postimg.cc/otvc5u6ej/portfolio-background.jpg') 50% 0 repeat fixed; min-height: 100px; 
-  height: 600px; 
+  height: 800px; 
   margin: 0 auto; 
   width: 100%; 
-  max-width: 1920px; 
+  max-width: 1400px; 
   position: relative; 
   font-size: 45px;
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
  
 #Skills article { 
   height: 458px; 
-  position: absolute; 
+  position: relative; 
   text-align: center; 
-  top: 150px; 
-  width: 100%; 
+  top: 15px; 
+  width: 100%;
+  max-width: 1300px;
 }
 /* Section Skills 1 */
 /*Place Images side by side//
@@ -163,28 +163,29 @@ img.hover-shadow {
 /*section id="Project"*/
 #Projects { 
   background: url('https://s31.postimg.cc/wqcnaceqz/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 600px; 
-  height: 600px; 
+  height: 900px; 
   margin: 0 auto; 
   width: 100%; 
-  max-width: 1920px; 
+  max-width: 1300px; 
   position: relative; /*previous absolute, changed to relative*/
   font-size: 45px;
   color:grey;
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
- 
+#Projects .container{
+  padding: 0 0 0 0%;
+}
+
 #Projects article { 
   height: 458px; 
-  position: absolute; 
+  position: relative; 
   text-align: center; 
-  top: 250px; 
+  top: 90px; 
   width: 100%; 
 }
 
 /*section id="Contact"*/
 /*Contact Form*/
-
 /* Contact Section */
 
 .social-media {
@@ -232,16 +233,14 @@ img.hover-shadow {
   position: absolute;
   font-size: 5px;
   color:grey;
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
  
 }
  
-
 #footer{
    text-align: center; 
   margin-left: 10%;/*to center the box of contact form*/
-    margin-right:5%;/*to center the box of contact form*/
+    margin-right:9%;/*to center the box of contact form*/
   color:black;
 }
 
