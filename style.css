@@ -3,13 +3,15 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
+* {
+    box-sizing: border-box;
+}
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
- 
 }
-
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
@@ -20,21 +22,17 @@ html, body {
     text-decoration: none;
     font-size: 17px;
 }
-
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
    text-decoration: none;
 }
-
 /* Add an active class to highlight the current page */
 .active {
     background-color: #4CAF50;
-    color: white;
-   
+    color: white; 
 }
-
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
@@ -47,12 +45,11 @@ html, body {
     display: block;
   }
 }
-
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
-    position: relative;
+    position: absolute;
     right: 0;
     top: 0;
   }
@@ -62,21 +59,22 @@ html, body {
     text-align: left;
   }
 } 
-
 /*section id="home"*/
 #home { 
   background: url('https://s31.postimg.cc/ysgash863/creekwood.jpg') 50% 0 repeat fixed; min-height: 600px; 
-  height: 600px; 
+  height: 200px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
   position: relative;
   font-size: 90px;
-  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
- 
 #home article { 
-  height: 700px; 
+  height: 458px; 
   position: relative; 
   text-align: center; 
   top: 200px; 
@@ -85,44 +83,51 @@ html, body {
  /*section id="about"*/
 #about { 
   background: url('https://s31.postimg.cc/goda7n057/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 390px; 
-  height: 600px; 
+  height: 200px; 
   margin: 0 auto; 
-  width: 100%;
+  width: 100%; 
   max-width: 1920px; 
   position: relative; 
-  text align:"center";
-  font-size: 18px;
+  font-size: 19px;
   color:lightgrey;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
- 
 #about article { 
   height: 458px; 
-  position: relative; 
+  position: absolute; 
   text-align: center; 
   top: 20px; 
   width: 100%; 
-  padding: 0 0 0 8%;
 }
-
 /*section id="skills"*/
+#skills
+  .content {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+}
 #Skills { 
   background: url('https://s31.postimg.cc/otvc5u6ej/portfolio-background.jpg') 50% 0 repeat fixed; min-height: 100px; 
-  height: 800px; 
+  height: 600px; 
   margin: 0 auto; 
   width: 100%; 
-  max-width: 1400px; 
+  max-width: 1920px; 
   position: relative; 
   font-size: 45px;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
- 
 #Skills article { 
   height: 458px; 
-  position: relative; 
+  position: absolute; 
   text-align: center; 
-  top: 15px; 
-  width: 100%;
-  max-width: 1300px;
+  top: 150px; 
+  width: 100%; 
 }
 /* Section Skills 1 */
 /*Place Images side by side//
@@ -133,7 +138,6 @@ box-sizing: border-box;
 .row {
 	display: flex;
 	}
-
 /* Thumbnail image controls*/
 .row > .column {
   padding: 0 8px;
@@ -150,52 +154,42 @@ img. {
 .demo:hover {
   opacity: 1;
 }
-
 img.hover-shadow {
   transition: 0.3s
 }
-
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
-
 /*End Section Skills-images*/
 /*section id="Project"*/
 #Projects { 
   background: url('https://s31.postimg.cc/wqcnaceqz/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 600px; 
-  height: 900px; 
+  height: 700px; 
   margin: 0 auto; 
   width: 100%; 
-  max-width: 1300px; 
+  max-width: 1920px; 
   position: relative; /*previous absolute, changed to relative*/
   font-size: 45px;
   color:grey;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
-#Projects .container{
-  padding: 0 0 0 0%;
-}
-
 #Projects article { 
   height: 458px; 
-  position: relative; 
+  position: absolute; 
   text-align: center; 
-  top: 90px; 
+  top: 250px; 
   width: 100%; 
 }
-
 /*section id="Contact"*/
 /*Contact Form*/
 /* Contact Section */
-
 .social-media {
   padding: 0 0 0 28%;
   width: 150%;
   position: relative;
   margin-top: 10em;
- 
  }
-
 .media-link,
 .media-link:link,
 .media-link:visited,
@@ -209,14 +203,11 @@ img.hover-shadow {
   border: 3px solid #222222;
   border-radius: 4px;
   margin: 1em 0 1em 0;
-
-  
   font-size: 5em;
   background-color: silver;/*or use this color: #f9f9f9*/
   color: #222222;
   text-decoration: none;
 }
-
 .media-link:hover,
 .media-link:active,
 .media-link:active:focus,
@@ -233,15 +224,15 @@ img.hover-shadow {
   position: absolute;
   font-size: 5px;
   color:grey;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
- 
+  -webkit-background-size: cover;
+   -background-size: cover;
 }
- 
 #footer{
    text-align: center; 
   margin-left: 10%;/*to center the box of contact form*/
-    margin-right:9%;/*to center the box of contact form*/
+    margin-right:5%;/*to center the box of contact form*/
   color:black;
 }
-
 /*End Section Footer*/
