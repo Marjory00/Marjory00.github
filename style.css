@@ -59,10 +59,25 @@ html, body {
     text-align: left;
   }
 } 
+/*Primary and secundary reference to responsive in devices*/
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+/*END Primary and secundary reference to responsive in devices*/
+
 /*section id="home"*/
 #home { 
-  background: url('https://s31.postimg.cc/ysgash863/creekwood.jpg') 50% 0 repeat fixed; min-height: 600px; 
-  height: 200px; 
+  background: url('https://s31.postimg.cc/ysgash863/creekwood.jpg') 50% 0 repeat fixed; min-height: 300px; 
+  height: 600px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
@@ -83,7 +98,7 @@ html, body {
  /*section id="about"*/
 #about { 
   background: url('https://s31.postimg.cc/goda7n057/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 390px; 
-  height: 200px; 
+  height: 300px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
@@ -201,7 +216,7 @@ img.hover-shadow {
 /*section id="Project"*/
 #Projects { 
   background: url('https://s31.postimg.cc/wqcnaceqz/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 600px; 
-  height: 1300px; 
+  height: 1320px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
