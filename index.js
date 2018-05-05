@@ -15,8 +15,8 @@ $(document).ready(function(){
         var $bgobj = $(this); // assigning the object  
         $(window).scroll(function() {
             var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
-          
-// Put together our final background position
+ 
+// Put together final background position
       var coords = '50% '+ yPos + 'px';
 
 // Move the background
@@ -24,7 +24,16 @@ $(document).ready(function(){
         }); 
     });    
 });
+$(document).ready(function($) {
 
+	$('.card__share > a').on('click', function(e){ 
+		e.preventDefault() // prevent default action - hash doesn't appear in url
+   		$(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
+		$(this).toggleClass('share-expanded');
+    });
+  
+});
+ 
 //End Section Background//
 //Section About//
 //End Section About//
