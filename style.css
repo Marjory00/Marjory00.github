@@ -288,7 +288,7 @@ img.hover-shadow {
 @media screen and (max-width: 800px) {
   .column {/*(.column before)*/
     flex: 50%;
-    max-width: 50%;
+    max-width: 25%;/*50% before*/
   }
 }
 
@@ -333,7 +333,7 @@ img.hover-shadow {
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
-  position: relat;
+  position: relative;
   font-size: 5px;
   color:grey;
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
@@ -375,10 +375,12 @@ img.hover-shadow {
     }
 }
 }
+
+
 /* Section #7 Footer */
 #footer{
    text-align: center; 
-  margin-left: 10%;/*to center the box of contact form*/
+  margin-left: 7%;/*to center the box of contact form*/
     margin-right:5%;/*to center the box of contact form*/
   color:black;
 }
