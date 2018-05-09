@@ -16,7 +16,7 @@ $(document).ready(function(){
         $(window).scroll(function() {
             var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
  
-// Put together final background position
+// Put final background position
       var coords = '50% '+ yPos + 'px';
 
 // Move the background
@@ -33,11 +33,32 @@ $(document).ready(function($) {
     });
   
 });
- 
+
 //End Section Background//
 //Section About//
 //End Section About//
 //Section Skills//
+
+//animation//
+var $window = $(window);
+var $elem = $(".animation")
+
+function isScrolledIntoView($elem, $window) {
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+$(document).on("scroll", function () {
+    if (isScrolledIntoView($elem, $window)) {
+        $elem.addClass("animation")
+    }
+});
+//END animation//
+
 //End Section Skills//
 //Section Projects//
 //End Section Projects//
