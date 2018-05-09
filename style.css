@@ -1,9 +1,11 @@
+/*Section #0 */
 /*DISABLE the Horizontal Scroll*/
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
 
+/* Section #1 -TopNav */
 * {
     box-sizing: border-box;
 }
@@ -59,15 +61,17 @@ html, body {
     text-align: left;
   }
 } 
+
+/* Section #2 Home */
 /*section id="home"*/
 #home { 
-  background: url('https://s31.postimg.cc/ysgash863/creekwood.jpg') 50% 0 repeat fixed; min-height: 600px; 
-  height: 200px; 
+  background: url('https://s31.postimg.cc/ysgash863/creekwood.jpg') 50% 0 repeat fixed; min-height: 300px; 
+  height: 700px; 
   margin: 0 auto; 
   width: 100%; 
-  max-width: 1920px; 
+  max-width: 100%; 
   position: relative;
-  font-size: 90px;
+  font-size: 70px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -80,15 +84,17 @@ html, body {
   top: 200px; 
   width: 100%; 
 }
+
+/*Section #3 About*/
  /*section id="about"*/
 #about { 
   background: url('https://s31.postimg.cc/goda7n057/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 390px; 
-  height: 200px; 
+  height: 670px; /*it was 600px before*/
   margin: 0 auto; 
   width: 100%; 
-  max-width: 1920px; 
+  max-width: 100%; 
   position: relative; 
-  font-size: 19px;
+  font-size: 18px;
   color:lightgrey;
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
@@ -98,12 +104,16 @@ html, body {
   background-size: cover;
 }
 #about article { 
-  height: 458px; 
+  height: 460px; 
   position: absolute; 
-  text-align: center; 
+  text-align: justified;/*to align text*/ 
   top: 20px; 
-  width: 100%; 
+  width: 95%; /*100% before*/
+  margin-left: 20px;/*to align text*/
+  padding: 20px;/*to align text*/
 }
+
+/*Section #4 Skills */
 /*section id="skills"*/
 #skills
   .content {
@@ -111,12 +121,37 @@ html, body {
 -moz-column-count: 3;
 column-count: 3;
 }
+/*Shake an Image*/
+.animation
+img {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*END Shake an Image*/
+
 #Skills { 
   background: url('https://s31.postimg.cc/otvc5u6ej/portfolio-background.jpg') 50% 0 repeat fixed; min-height: 100px; 
-  height: 600px; 
+  height: 950px; 
   margin: 0 auto; 
   width: 100%; 
-  max-width: 1920px; 
+  max-width: 100%; 
   position: relative; 
   font-size: 45px;
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
@@ -129,7 +164,11 @@ column-count: 3;
   top: 150px; 
   width: 100%; 
 }
-/* Section Skills 1 */
+
+/*Shake skills images*/
+
+
+/*END shake skills img*/
 /*Place Images side by side//
 //This Section Add to CSS float property*/
  {
@@ -160,33 +199,152 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
+
 /*End Section Skills-images*/
-/*section id="Project"*/
-#Projects { 
+/*Use CSS Flexbox to Skills section to create a responsive layout*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 100%;/*it was 50% before*/
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*END Use CSS Flexbox to create a responsive layout in Skills section*/
+
+/* Section # 5 Portfolio */
+/*section id="Portfolio"*/
+#Portfolio { 
   background: url('https://s31.postimg.cc/wqcnaceqz/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 600px; 
-  height: 700px; 
+  height: 1300px; /*1350px before */
   margin: 0 auto; 
   width: 100%; 
-  max-width: 1920px; 
+  max-width: 100%; 
   position: relative; /*previous absolute, changed to relative*/
   font-size: 45px;
   color:grey;
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,12);
+  box-shadow: 0 0 50px rgba(0,0,0,12);
+} /*where 12, 0.8 before*/
+
+
+/*SHRINK*/
+.shrink {
+  height: 400px;
+  width: 400px;
+ 
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
 }
-#Projects article { 
-  height: 458px; 
-  position: absolute; 
-  text-align: center; 
-  top: 250px; 
-  width: 100%; 
+ 
+.zoom img:hover {
+  width: 300px;
+  height: 300px;
 }
+/*END SHRINK img*/
+
+/*Draft1 -Portfolio*/
+/*Use CSS Flexbox to create a responsive layout*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+  flex: 30%;/*it was 25% before*/
+  max-width: 70%;
+  padding: 0 5px;
+ 
+}
+
+.column-gallery img {
+  margin-top: 5px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 40%;/*it was 25%*/
+    max-width: 70%;/*it was 50% before*/
+  }
+}
+
+/*END Use CSS Flexbox to create a responsive layout in portfolio section*/
+
+/*END Cards-Portfolio*/
+
+/* Section #6 Contact */
 /*section id="Contact"*/
+/*Use CSS Flexbox to Contact section to create a responsive layout*/
+
+#contact
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+   margin-top: -20px; 
+}
+
+/* Create four equal columns that sits next to each other */
+#contact
+.column {
+  display: flex;
+  max-width: 25%;
+  padding: 0 auto;
+}
+
+.column { /*(.column img before)*/
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {/*(.column before)*/
+    flex: 25%;/*50% before*/
+    max-width: 25%;/*50% before*/
+  }
+}
+
+/*END Use CSS Flexbox to create a responsive layout in Contact section*/
+
 /*Contact Form*/
 /* Contact Section */
 .social-media {
-  padding: 0 0 0 28%;
-  width: 150%;
+  padding: 0 0 0 168.5%;
+  width: 100%;
   position: relative;
   margin-top: 10em;
  }
@@ -199,11 +357,11 @@ img.hover-shadow {
 .media-link:focus {
   position: relative;
   display: block;
-  width: 20em;
+  width: 7em; /*15em before*/
   border: 3px solid #222222;
   border-radius: 4px;
   margin: 1em 0 1em 0;
-  font-size: 5em;
+  font-size: 4.5em;/*5em before*/
   background-color: silver;/*or use this color: #f9f9f9*/
   color: #222222;
   text-decoration: none;
@@ -217,22 +375,60 @@ img.hover-shadow {
 }
 #contact { 
   background: url('https://s31.postimg.cc/goda7n057/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 300px; 
-  height: 600px; 
+  height: 650px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
-  position: absolute;
+  position: relative;
   font-size: 5px;
   color:grey;
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,12);
+  box-shadow: 0 0 50px rgba(0,0,0,12);
   -webkit-background-size: cover;
    -background-size: cover;
 }
+
+*contact{
+* {
+    box-sizing: border-box;
+}
+ 
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+        width: 50%;
+    }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column-contact {/*(.column before)*/
+        width: 100%;
+    }
+}
+}
+
+
+/* Section #7 Footer */
 #footer{
    text-align: center; 
-  margin-left: 10%;/*to center the box of contact form*/
+  margin-left: 5%;/*to center the box of contact form*/
     margin-right:5%;/*to center the box of contact form*/
   color:black;
+  padding: 0 auto;
 }
 /*End Section Footer*/
