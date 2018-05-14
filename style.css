@@ -106,7 +106,7 @@ html, body {
 #about article { 
   height: 460px; 
   position: absolute; 
-  text-align: justify;/*to align text*/ 
+  text-align: justified;/*to align text*/ 
   top: 20px; 
   width: 95%; /*100% before*/
   margin-left: 20px;/*to align text*/
@@ -121,7 +121,6 @@ html, body {
 -moz-column-count: 3;
 column-count: 3;
 }
-
 #Skills { 
   background: url('https://s31.postimg.cc/otvc5u6ej/portfolio-background.jpg') 50% 0 repeat fixed; min-height: 100px; 
   height: 950px; 
@@ -140,17 +139,16 @@ column-count: 3;
   top: 150px; 
   width: 100%; 
 }
-
 /*Place Images side by side//
 //This Section Add to CSS float property*/
  {
 box-sizing: border-box;
 }
-.row .col-3{
+.row {
 	display: flex;
 	}
 /* Thumbnail image controls*/
-.row .col-3 {
+.row > .column {
   padding: 0 8px;
 }
 .row:after {
@@ -174,36 +172,35 @@ img.hover-shadow {
 
 /*End Section Skills-images*/
 /*Use CSS Flexbox to Skills section to create a responsive layout*/
-.row .col-3{
+.row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
-.col-3 {
-  flex: 100%;/*25% before*/
-  max-width: 100%;/*25% before*/
+.column {
+  flex: 25%;
+  max-width: 25%;
   padding: 0 4px;
-  display:flex;
 }
 
-.col-3 img {
+.column img {
   margin-top: 8px;
   vertical-align: middle;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-  .col-3 {
-    display:flex;
+  .column {
+    flex: 50%;
     max-width: 100%;/*it was 50% before*/
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .col-3 {
+  .column {
     flex: 100%;
     max-width: 100%;
   }
@@ -214,8 +211,8 @@ img.hover-shadow {
 /* Section # 5 Portfolio */
 /*section id="Portfolio"*/
 #Portfolio { 
-  background: url('https://s31.postimg.cc/wqcnaceqz/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 200px; 
-  height: 1920px; /*1350px before */
+  background: url('https://s31.postimg.cc/wqcnaceqz/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 600px; 
+  height: 1300px; /*1350px before */
   margin: 0 auto; 
   width: 100%; 
   max-width: 100%; 
@@ -225,6 +222,7 @@ img.hover-shadow {
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,12);
   box-shadow: 0 0 50px rgba(0,0,0,12);
 } /*where 12, 0.8 before*/
+
 
 /*SHRINK*/
 .shrink {
@@ -245,39 +243,31 @@ img.hover-shadow {
 /*END SHRINK img*/
 
 /*Draft1 -Portfolio*/
-/*Use CSS Flexbox to portfolio section to create a responsive layout*/
-.row column-gallery {
+/*Use CSS Flexbox to create a responsive layout*/
+.row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 2px;
-  overflow: scroll;
+  padding: 0 5px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column-gallery {
-  flex: 100%;
-  max-width: 24%;
-  padding: 0 2px;
+  flex: 30%;/*it was 25% before*/
+  max-width: 70%;
+  padding: 0 5px;
+ 
 }
 
 .column-gallery img {
-  margin-top: 8px;
+  margin-top: 5px;
   vertical-align: middle;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-  .column-gallery {
-    flex: 100%;/*two column in devices*/
-    max-width: 100%;/*it was 50% before*/
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column-gallery {
-    flex: 100%;
-    max-width: 100%;
+  .column {
+    flex: 40%;/*it was 25%*/
+    max-width: 70%;/*it was 50% before*/
   }
 }
 
@@ -355,7 +345,7 @@ img.hover-shadow {
 }
 #contact { 
   background: url('https://s31.postimg.cc/goda7n057/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 300px; 
-  height: 680px; 
+  height: 650px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 1920px; 
@@ -407,7 +397,6 @@ img.hover-shadow {
    text-align: center; 
   margin-left: 5%;/*to center the box of contact form*/
     margin-right:5%;/*to center the box of contact form*/
-  margin-top: 10%;
   color:black;
   padding: 0 auto;
 }
