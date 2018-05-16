@@ -1,4 +1,4 @@
-/*Section #0 */
+/*Section #0*/
 /*DISABLE the Horizontal Scroll*/
 html, body {
     max-width: 100%;
@@ -20,9 +20,9 @@ html, body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 18px;
 }
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -61,40 +61,47 @@ html, body {
     text-align: left;
   }
 } 
-
 /* Section #2 Home */
 /*section id="home"*/
 #home { 
-  background: url('https://s31.postimg.cc/ysgash863/creekwood.jpg') 50% 0 repeat fixed; min-height: 300px; 
-  height: 700px; 
+  background: url('https://s31.postimg.cc/ysgash863/creekwood.jpg') 50% 0 repeat fixed; min-height: 100px;
+  display: flex;
+  height: 650px; 
   margin: 0 auto; 
+  margin-top: 0%;
   width: 100%; 
   max-width: 100%; 
   position: relative;
-  font-size: 70px;
+  font-size: 65px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-#home article { 
+#home
+h1 { 
   height: 458px; 
+  display: flex;
   position: relative; 
   text-align: center; 
-  top: 200px; 
-  width: 100%; 
+  top: 10px; 
+  width: 100%;
+  font-size: 70px;
+  margin: 200px;
+  margin-left: 25%;
 }
 
 /*Section #3 About*/
  /*section id="about"*/
 #about { 
   background: url('https://s31.postimg.cc/goda7n057/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 390px; 
-  height: 670px; /*it was 600px before*/
+  height: 550px; /*it was 600px before*/
   margin: 0 auto; 
+  display: flex;
   width: 100%; 
   max-width: 100%; 
   position: relative; 
-  font-size: 18px;
+  font-size: 17px;
   color:lightgrey;
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
@@ -103,7 +110,8 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-#about article { 
+#about 
+.p { 
   height: 460px; 
   position: absolute; 
   text-align: justify;/*to align text*/ 
@@ -124,7 +132,7 @@ column-count: 3;
 
 #Skills { 
   background: url('https://s31.postimg.cc/otvc5u6ej/portfolio-background.jpg') 50% 0 repeat fixed; min-height: 100px; 
-  height: 950px; 
+  height: 850px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 100%; 
@@ -132,10 +140,14 @@ column-count: 3;
   font-size: 45px;
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-#Skills article { 
+#skills { 
   height: 458px; 
-  position: absolute; 
+  position: relative; 
   text-align: center; 
   top: 150px; 
   width: 100%; 
@@ -143,16 +155,16 @@ column-count: 3;
 
 /*Place Images side by side//
 //This Section Add to CSS float property*/
- {
+
+* {
 box-sizing: border-box;
 }
-.row .col-3{
-	display: flex;
-	}
-/* Thumbnail image controls*/
+
 .row .col-3 {
-  padding: 0 8px;
+padding: 0 8px;
+display: flex;
 }
+
 .row:after {
   content: "";
   display: table;
@@ -161,7 +173,7 @@ box-sizing: border-box;
 img. {
   opacity: 0.6;
 }
-.active,
+
 .demo:hover {
   opacity: 1;
 }
@@ -183,7 +195,7 @@ img.hover-shadow {
 /* Create four equal columns that sits next to each other */
 .col-3 {
   flex: 100%;/*25% before*/
-  max-width: 100%;/*25% before*/
+  max-width: 50%;/*25% before*/
   padding: 0 4px;
   display:flex;
 }
@@ -215,7 +227,7 @@ img.hover-shadow {
 /*section id="Portfolio"*/
 #Portfolio { 
   background: url('https://s31.postimg.cc/wqcnaceqz/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 200px; 
-  height: 1950px; /*1350px before */
+  height: 1000px; /*1350px before */
   margin: 0 auto; 
   width: 100%; 
   max-width: 100%; 
@@ -225,6 +237,10 @@ img.hover-shadow {
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,12);
   box-shadow: 0 0 50px rgba(0,0,0,12);
 } /*where 12, 0.8 before*/
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 /*SHRINK*/
 .shrink {
@@ -249,7 +265,7 @@ img.hover-shadow {
 .row column-gallery {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 2px;
+  padding: 0 5px;
   overflow: scroll;
 }
 
@@ -257,12 +273,13 @@ img.hover-shadow {
 .column-gallery {
   flex: 100%;
   max-width: 24%;
-  padding: 0 2px;
+  padding: 0 1px;
 }
 
 .column-gallery img {
   margin-top: 8px;
   vertical-align: middle;
+  margin-top: -10%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -294,7 +311,6 @@ img.hover-shadow {
   display: flex;
   flex-wrap: wrap;
   padding: 0 5px;
-   margin-top: -20px; 
 }
 
 /* Create four equal columns that sits next to each other */
@@ -302,11 +318,11 @@ img.hover-shadow {
 .column {
   display: flex;
   max-width: 25%;
-  padding: 0 auto;
+  padding: 0 0;
 }
 
-.column { /*(.column img before)*/
-  margin-top: 10px;
+.column img{ /*(.column img before)*/
+  margin-top: 1px;
   vertical-align: middle;
 }
 
@@ -323,10 +339,11 @@ img.hover-shadow {
 /*Contact Form*/
 /* Contact Section */
 .social-media {
-  padding: 0 0 0 165%;
+  padding: 0 0 0 78%;
   width: 100%;
   position: relative;
-  margin-top: 10em;
+  margin-top: 1em;
+  margin: auto;
  }
 .media-link,
 .media-link:link,
@@ -337,10 +354,10 @@ img.hover-shadow {
 .media-link:focus {
   position: relative;
   display: block;
-  width: 7em; /*15em before*/
+  width: 6em; /*15em before*/
   border: 3px solid #222222;
-  border-radius: 4px;
-  margin: 1em 0 1em 0;
+  border-radius: 2px;
+  margin: 1em 0 1em 1em;
   font-size: 4.5em;/*5em before*/
   background-color: silver;/*or use this color: #f9f9f9*/
   color: #222222;
@@ -353,38 +370,18 @@ img.hover-shadow {
   background-color: grey;
   text-decoration: none;
 }
-#contact { 
+#Contact { 
   background: url('https://s31.postimg.cc/goda7n057/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 300px; 
-  height: 680px; 
+  height: 500px; 
   margin: 0 auto; 
   width: 100%; 
-  max-width: 100%; 
+  max-width: 100%;
   position: relative;
   font-size: 5px;
   color:grey;
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,12);
   box-shadow: 0 0 50px rgba(0,0,0,12);
-  -webkit-background-size: cover;
-   -background-size: cover;
-}
 
-*contact{
-* {
-    box-sizing: border-box;
-}
- 
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
-    padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
@@ -397,19 +394,24 @@ img.hover-shadow {
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
     .column-contact {/*(.column before)*/
-        width: 100%;
+        width: 80%;
     }
 }
 }
+/*Section #7 Footer*//
 
-/* Section #7 Footer */
-#footer{
+footer{
    text-align: center; 
-  margin-left: 5%;/*to center the box of contact form*/
-    margin-right:5%;/*to center the box of contact form*/
-  margin-top: 9%;
+  margin-left: 0%;/*to center the box of contact form*/
+    margin-right:0%;/*to center the box of contact form*/
+  margin-top: 0%;
   color:black;
-  padding: 0 auto;
+  padding: 0 0;
+ display: flex;
 }
-/*End Section Footer*/
+ 
+h5 {
+  text-align: center;
+}
 
+/*End Section Footer*/
