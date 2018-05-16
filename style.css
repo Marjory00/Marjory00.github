@@ -81,14 +81,13 @@ html, body {
 #home
 h1 { 
   height: 458px; 
-  display: flex;
   position: relative; 
   text-align: center; 
   top: 10px; 
   width: 100%;
   font-size: 70px;
   margin: 200px;
-  margin-left: 25%;
+  margin-left: 0%;
 }
 
 /*Section #3 About*/
