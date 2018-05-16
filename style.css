@@ -125,9 +125,9 @@ h1 {
 /*section id="skills"*/
 #skills
   .content {
--webkit-column-count: 3;
--moz-column-count: 3;
-column-count: 3;
+-webkit-column-count: 4;
+-moz-column-count: 4;
+column-count: 4;
 }
 
 #Skills { 
@@ -194,8 +194,8 @@ img.hover-shadow {
 
 /* Create four equal columns that sits next to each other */
 .col-3 {
-  flex: 100%;/*25% before*/
-  max-width: 50%;/*25% before*/
+  flex: 50%;/*25% before*/
+  max-width: 30%;/*25% before*/
   padding: 0 4px;
   display:flex;
 }
@@ -217,7 +217,7 @@ img.hover-shadow {
 @media screen and (max-width: 600px) {
   .col-3 {
     flex: 100%;
-    max-width: 100%;
+    max-width: 50%;
   }
 }
 
