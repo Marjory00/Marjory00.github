@@ -131,7 +131,7 @@ column-count: 4;
 
 #Skills { 
   background: url('https://s31.postimg.cc/otvc5u6ej/portfolio-background.jpg') 50% 0 repeat fixed; min-height: 100px; 
-  height: 875px; 
+  height: 890px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 100%; 
@@ -193,8 +193,8 @@ img.hover-shadow {
 
 /* Create four equal columns that sits next to each other */
 .col-sm-3 {
-  flex: 80%;/*25% before*/
-  max-width: 80%;/*25% before*/
+  flex: 75%;/*25% before*/
+  max-width: 75%;/*25% before*/
   padding: 0 4px;
   display:flex;
 }
@@ -208,7 +208,7 @@ img.hover-shadow {
 @media screen and (max-width: 800px) {
   .col-sm-3 {
     display:flex;
-    max-width: 80%;/*it was 50% before*/
+    max-width: 75%;/*it was 50% before*/
   }
 }
 
