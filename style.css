@@ -136,7 +136,7 @@ column-count: 4;
   width: 100%; 
   max-width: 100%; 
   position: relative; 
-  font-size: 45px;
+  font-size: 12px;
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
   -webkit-background-size: cover;
@@ -149,7 +149,7 @@ column-count: 4;
   position: relative; 
   text-align: center; 
   top: 150px; 
-  width: 100%; 
+  width: 50%; 
 }
 
 /*Place Images side by side//
@@ -194,7 +194,7 @@ img.hover-shadow {
 /* Create four equal columns that sits next to each other */
 .col-sm-3 {
   flex: 75%;/*25% before*/
-  max-width: 75%;/*25% before*/
+  max-width: 50%;/*25% before*/
   padding: 0 4px;
   display:flex;
 }
@@ -208,7 +208,7 @@ img.hover-shadow {
 @media screen and (max-width: 800px) {
   .col-sm-3 {
     display:flex;
-    max-width: 75%;/*it was 50% before*/
+    max-width: 65%;/*it was 50% before*/
   }
 }
 
