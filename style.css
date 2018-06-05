@@ -131,7 +131,7 @@ column-count: 4;
 
 #skills { 
  background: url('https://s31.postimg.cc/otvc5u6ej/portfolio-background.jpg') 50% 0 repeat fixed; min-height: 100px; 
-  height: 890px; 
+  height: 750px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 100%; 
@@ -227,7 +227,7 @@ img.hover-shadow {
 /*section id="Portfolio"*/
 #portfolio { 
   background: url('https://s31.postimg.cc/wqcnaceqz/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 200px; 
-  height: 1780px; /*1350px before */
+  height: 2500px; /*1350px before */
   margin: 0 auto; 
   width: 100%; 
   max-width: 100%; 
@@ -260,60 +260,54 @@ img.hover-shadow {
 }
 /*END SHRINK img*/
 
-.h4 {
-     text-align:center;
-  color: grey;
-  font-size:10px;
-   }
 
-.col-md-3 {
-    -webkit-column-count: 4; /* Chrome, Safari, Opera */
-    -moz-column-count: 4; /* Firefox */
-    column-count: 4;
-    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 10px; /* Firefox */
-    column-gap: 10px;
+div.gallery {
+    border: 1px solid #555;/*ccc or ddd*/
 }
 
-/*Draft1 -Portfolio*/
-/*Use CSS Flexbox to portfolio section to create a responsive layout*/
-.col-md-3 {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 5px;
-  overflow: scroll;
+div.gallery:hover {
+    border: 1px solid #777;/*999*/
 }
 
-/* Create four equal columns that sits next to each other */
-.col-md-3 {
-  flex: 50%;
-  max-width: 50%;
-  padding: 0 1px;
+div.gallery img {
+    width: 100%;
+    height: 200px;
 }
 
-.col-md-3 .img {
-  margin-top: 8px;
-  vertical-align: middle;
-  margin-top: -10%;
+div.desc {
+    padding: 15px;
+    text-align: center;
+  font-size:15px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .col-md-3 {
-    flex: 75%;/*two column in devices*/
-    max-width: 50%;/*it was 50% before*/
-  }
+* {
+    box-sizing: border-box;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-md-3{
-    flex: 40%;
-    max-width: 40%;
-  }
+.responsive {
+    padding: 3px 3px;
+    float: left;
+    width: 25%;
 }
 
-/*END Use CSS Flexbox to create a responsive layout in portfolio section*/
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /*END Cards-Portfolio*/
 
@@ -379,11 +373,11 @@ img.hover-shadow {
 
 #contact { 
   background: url('https://s31.postimg.cc/goda7n057/28gj4_X.jpg') 50% 0 repeat fixed; min-height: 300px; 
-  height: 670px; 
+  height: 650px; 
   margin: 0 auto; 
   width: 100%; 
   max-width: 100%;
-  position: relative;
+  position: absolute;
   font-size: 5px;
   color:grey;
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,12);
