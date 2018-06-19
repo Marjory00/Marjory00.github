@@ -120,6 +120,14 @@ p {
   padding: 1%;/*to align text*/
 }
 
+.lead {
+    letter-spacing: .01875rem;
+}
+.lead {
+    font-size: .9375rem;
+    font-weight: 400;
+}
+
 /*Section #4 Skills */
 /*section id="skills"*/
 #skills
