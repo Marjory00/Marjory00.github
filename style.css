@@ -121,10 +121,10 @@ p {
 }
 
 .lead {
-    letter-spacing: .01875rem;
+    letter-spacing: 0px;
 }
 .lead {
-    font-size: .9375rem;
+    font-size: 12px;!important;
     font-weight: 400;
 }
 
@@ -156,7 +156,7 @@ column-count: 4;
 }
 
 skills { 
-  height: 458px; 
+  height: 600px; 
   position: relative; 
   text-align: center; 
   top: 150px; 
